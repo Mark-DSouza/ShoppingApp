@@ -49,6 +49,7 @@ class ProductsOverviewScreen extends StatelessWidget {
         itemCount: loadedProducts.length,
         itemBuilder: (ctx, index) {
           return ProductItem(
+            id: loadedProducts[index].id,
             title: loadedProducts[index].title,
             imageUrl: loadedProducts[index].imageUrl,
           );
